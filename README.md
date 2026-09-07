@@ -1,24 +1,28 @@
-# Django Job Board API
+# Job Board Web Application (Django)
 
-Backend project built with Django.
+A full-featured Job Board backend service built with Python and Django. The application allows employers to post job openings and job seekers to search, filter, and apply for positions.
 
-## Features
-- Companies
-- Job listings
-- Admin panel
-- Django ORM
-- CRUD operations
+## 🚀 Key Features
 
-## Tech Stack
-- Python
-- Django
-- SQLite
-- Git
+- **User Management & Auth:** Custom user roles (Employers and Applicants) with secure authentication.
+- **Job Listings CRUD:** Full CRUD functionality for posting, updating, and managing job postings.
+- **Search & Filtering:** Dynamic search for vacancies by keywords, categories, location, and employment type.
+- **Applications Management:** Workflow for submitting applications and resumes for open positions.
+- **Database & ORM:** Optimized database queries to handle relational data efficiently.
 
-## Run locally
-```bash
-python -m venv venv
-venv\Scripts\activate
-pip install -r requirements.txt
-python manage.py migrate
-python manage.py runserver
+## 🛠 Tech Stack
+
+- **Language:** Python 3.x
+- **Framework:** Django / Django REST Framework
+- **Database:** PostgreSQL / SQLite
+- **Tools:** Git, GitHub
+
+## 📂 Project Structure
+
+```text
+django-job-board/
+├── manage.py
+├── requirements.txt
+├── README.md
+├── job_board/          # Main configuration directory
+└── jobs/               # Application for job listings and applications
